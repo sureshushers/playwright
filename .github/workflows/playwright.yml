@@ -25,3 +25,14 @@ jobs:
         name: playwright-report
         path: playwright-report/
         retention-days: 30
+    - name: Setting up the Exectution Reports
+      uses: actions/configure-pages@v2
+      
+    - name: Upload the results files and publishing it
+      uses: actions/upload-pages-artifaces@v1
+      with:
+        # Upload entire repository
+        path: playwright-report/
+    - name: Deploy to GitHyb Pages
+      id: deployment
+      uses: actions/upload-pages-artifaces@v1    
