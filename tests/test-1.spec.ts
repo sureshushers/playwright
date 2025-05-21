@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('MyBlue Home Page Validation', async ({ page }) => {
-  await page.goto('https://askbluestg.bcbsa.com/');
+  await page.goto('https://askblue.fepblue.org/');
   
   await page.getByText('Use our product selection').click();
   await expect(page.locator('h1')).toContainText('Welcome to the AskBlueSM FEP Medical Plan Finder');

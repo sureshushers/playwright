@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-  await page.goto('https://askbluestg.bcbsa.com/');
+  await page.goto('https://askblue.fepblue.org//');
   await page.locator('div').filter({ hasText: /^Yes, I'm a Member$/ }).click();
   await page.getByRole('button', { name: 'Continue' }).click();
   await page.getByRole('button', { name: 'Let\'s Get Started' }).click();
