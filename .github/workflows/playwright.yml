@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [ main, master ]
 jobs:
-  askblue-tests:
+  setup-and-run-tests:
     timeout-minutes: 15
     runs-on: ubuntu-latest
     strategy: 
